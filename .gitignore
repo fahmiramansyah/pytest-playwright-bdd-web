@@ -1,7 +1,7 @@
 # # Python bytecode
-# __pycache__/
-# *.pyc
-# *.pyo
+__pycache__/
+*.pyc
+*.pyo
 
 # Virtual environment
 venv/
