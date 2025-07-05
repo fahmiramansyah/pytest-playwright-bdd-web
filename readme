@@ -1,0 +1,34 @@
+Automation Test with Python (Pytest), BDD: Cucumber & Playwright
+
+How to install :
+1. Persiapan Awal Install Homebrew (jika belum) 
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. Install Python 3 (pastikan dari Homebrew agar kompatibel M1) 
+    brew install python
+
+3. Cek versi Python dan 
+    pip python3 --version 
+    pip3 --version
+
+4. Hapus venv akun sebelumnya:
+    rm -rf venv
+
+5. Buat dan aktifkan virtual environment
+    python -m venv venv
+    source venv/bin/activate
+
+5. Install Dependencies PLaywright : 
+    pip install pytest pytest-bdd playwright
+    python3 -m playwright install
+    pip install pytest-metadata
+    pip install pytest-html
+
+'For MacOS user'
+--------------------------
+
+How to run:
+for desktop web = pytest -m "login and desktop" 
+for mobile web = pytest -m "login and mobile" 
+for all = pytest -m login
+for headless = pytest -m login --headless=true
